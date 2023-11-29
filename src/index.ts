@@ -1,6 +1,6 @@
 import "./main.css";
-import "./malumot";
-
+import "./data.ts";
+import { removlar as dataRemov } from "./data";
 import axios from "axios";
 
 const URL = "https://jsonplaceholder.typicode.com/users";
@@ -12,7 +12,7 @@ async function searchUser() {
 		const response = await axios.get(`${URL}`);
 
 		a.push(response.data);
-		console.log(a);
+		// console.log(a);
 
 		UserMalumot(a[0]);
 	} catch (error) {
@@ -45,7 +45,8 @@ function UserMalumot(data: any[]) {
 		tel.innerText = `${ele.phone}`;
 		tel.className = "teltd";
 		imgg.src = "https://www.freeiconspng.com/thumbs/eye-icon/eyeball-icon-png-eye-icon-1.png";
-		imgg.className = "img";
+		imgg.className = "imgkoz";
+		imgg.id = "img";
 		imgg2.src = "https://cdn-icons-png.flaticon.com/512/1345/1345874.png";
 		imgg2.className = "img1";
 
@@ -64,24 +65,22 @@ function UserMalumot(data: any[]) {
 
 function remov() {
 	const rows: NodeListOf<HTMLImageElement> = document.querySelectorAll(".img1")!;
-	console.log(rows);
+	// console.log(rows);
 
 	rows.forEach((rowi) => {
 		rowi.addEventListener("click", () => {
-			// Remove the parent element of the clicked image
 			const parentRow = rowi.parentElement;
 			if (parentRow && parentRow.nodeType === Node.ELEMENT_NODE) {
 				parentRow.remove();
-				// If needed, call qaytaChizish here
-				// qaytaChizish();
+
 			}
 		});
 	});
+	 dataRemov(); // data fayil
 }
 
-function qaytaChizish() {
-	contener.innerHTML = "";
-	UserMalumot(a);
-}
 
 searchUser();
+
+
+
