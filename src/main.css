@@ -4,14 +4,15 @@
 }
 .contener {
 	width: 100%;
+
+
 }
 .con {
 	box-sizing: border-box;
-	padding: 30px;
+	/* padding: 30px; */
 	width: 100%;
 
-	gap: 50px;
-	height: 700px;
+	/* height: 700px; */
 }
 .img,
 .img1 {
@@ -21,7 +22,11 @@
 }
 tr {
 	width: 100%;
-	border-top: 1px solid black;
+	border-top: 1px solid black;background-color: green;
+ display: flex;
+ /* flex-direction: column; */
+  gap: 30px;
+   padding: 10px;
 }
 .idtd {
 	width: 30px;
