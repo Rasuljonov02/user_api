@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.contener {
+	width: 100%;
+}
+.con {
+	box-sizing: border-box;
+	padding: 30px;
+	width: 100%;
+
+	gap: 50px;
+	height: 700px;
+}
+.img,
+.img1 {
+	width: 30px;
+
+	cursor: pointer;
+}
+tr {
+	width: 100%;
+	border-top: 1px solid black;
+}
+.idtd {
+	width: 30px;
+}
+.nametd {
+	width: 180px;
+}
+.emailtd {
+	width: 230px;
+}
+.teltd {
+	width: 180px;
+}
+span {
+	width: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

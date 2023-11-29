@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@faker-js/faker": "^8.2.0",
+    "axios": "^1.6.2",
     "bootstrap": "^5.3.2",
     "typescript": "^5.1.6",
     "yarn": "^1.22.19",
