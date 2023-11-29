@@ -1,0 +1,192 @@
+* {
+	margin: 0;
+	padding: 0;
+	user-select: none;
+
+}
+
+body {
+	box-sizing: border-box;
+	padding: 10px;
+	background-color: rgb(27, 27, 27);
+}
+.content {
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.car {
+	width: 100%;
+	display: flex;
+	gap: 5px;
+	justify-content: space-around;
+}
+.carParkofka {
+	width: 100%;
+	display: flex;
+	gap: 5px;
+	justify-content: space-around;
+}
+.electrCarlar {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding: 5px 10px;
+
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(54, 56, 56);
+}
+.gibridCarlar {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding: 5px 10px;
+
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(54, 56, 56);
+}
+.gazCarlar {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding: 5px 10px;
+
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(54, 56, 56);
+}
+
+.electrCar {
+	width: 200px;
+	background-color: aquamarine;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	margin: 20px;
+	color: white;
+}
+
+.gibridCar {
+	width: 180px;
+	background-color: aquamarine;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	margin: 20px;
+	color: white;
+}
+.gazcar {
+	width: 190px;
+	background-color: aquamarine;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	margin: 20px;
+	color: white;
+}
+.electrcarchiz{
+	width: 190px;
+	background-color: aquamarine;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	margin: 20px;
+	color: white;
+}
+.gibridcarchiz{
+	width: 190px;
+	background-color: aquamarine;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	margin: 20px;
+	color: white;
+}
+.gibridcarchizish{
+	width: 190px;
+	background-color: aquamarine;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	margin: 20px;
+	color: white;
+}
+.gazcarchizish{
+	width: 190px;
+	background-color: aquamarine;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	margin: 20px;
+	color: white;
+}
+.electrCarlar1 {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	background-color: rgb(54, 56, 56);
+
+	width: auto;
+	align-items: center;
+	justify-content: center;
+}
+.gazCarlar1 {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	background-color: rgb(54, 56, 56);
+
+	width: auto;
+	align-items: center;
+	justify-content: center;
+}
+.gibridCarlar1 {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	background-color: rgb(54, 56, 56);
+
+	width: auto;
+	align-items: center;
+	justify-content: center;
+}
+h2 {
+	color: white;
+}
+.div {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	color: white;
+
+	align-items: center;
+	justify-content: center;
+}
+.div1 {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	color: white;
+
+	align-items: center;
+	justify-content: center;
+}
+.div2 {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	color: white;
+
+	align-items: center;
+	justify-content: center;
+}
