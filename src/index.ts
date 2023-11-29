@@ -28,7 +28,7 @@ function UserMalumot(data: any[]) {
 		const imgg: HTMLImageElement = document.createElement("img");
 		const imgg2: HTMLImageElement = document.createElement("img");
 		const span: HTMLSpanElement = document.createElement("span");
-		tr.className = `${i + 1}`;
+		tr.id = `${i + 1}`;
 		name.innerText = `${ele.name}`;
 		name.className = "nametd";
 		id.innerText = `${i + 1}`;
@@ -66,16 +66,13 @@ function remov() {
 	imgremove.forEach((element, index: number) => {
 					element.addEventListener("click", () => {
 									p = parseInt(`${index + 1}`);
-									console.log(`${index + 1}`);
+									console.log(p);
+									const f: HTMLElement = document.querySelector(`#${p}`)!;
 
-								});
-							});
+													f.remove();
 
-							const classP: HTMLElement  = document.querySelector(`.${p}`)!;
-
-							
-									classP.remove();
-
+					});
+	});
 }
 
 searchVideos();
