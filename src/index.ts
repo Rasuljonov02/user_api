@@ -1,4 +1,6 @@
 import "./main.css";
+import "./malumot";
+
 import axios from "axios";
 
 const URL = "https://jsonplaceholder.typicode.com/users";
@@ -10,17 +12,13 @@ async function searchUser() {
 		const response = await axios.get(`${URL}`);
 
 		a.push(response.data);
-console.log(a);
+		console.log(a);
 
-UserMalumot(a[0]);
-
+		UserMalumot(a[0]);
 	} catch (error) {
 		console.error(error);
 	}
 }
-
-
-
 
 function UserMalumot(data: any[]) {
 	for (let i = 0; i < data.length; i++) {
@@ -69,15 +67,15 @@ function remov() {
 	console.log(rows);
 
 	rows.forEach((rowi) => {
-					rowi.addEventListener("click", () => {
-									// Remove the parent element of the clicked image
-									const parentRow = rowi.parentElement;
-									if (parentRow && parentRow.nodeType === Node.ELEMENT_NODE) {
-													parentRow.remove();
-													// If needed, call qaytaChizish here
-													// qaytaChizish();
-									}
-					});
+		rowi.addEventListener("click", () => {
+			// Remove the parent element of the clicked image
+			const parentRow = rowi.parentElement;
+			if (parentRow && parentRow.nodeType === Node.ELEMENT_NODE) {
+				parentRow.remove();
+				// If needed, call qaytaChizish here
+				// qaytaChizish();
+			}
+		});
 	});
 }
 
