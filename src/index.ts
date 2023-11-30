@@ -6,6 +6,8 @@ import axios from "axios";
 const URL = "https://jsonplaceholder.typicode.com/users";
 const contener: HTMLDListElement = document.querySelector(".con")!;
 let a: any[] = [];
+const contener2: HTMLDivElement = document.querySelector(".contener2")!;
+
 
 async function searchUser() {
 	try {
@@ -80,7 +82,6 @@ function remov() {
 }
 
 
+
+
 searchUser();
-
-
-

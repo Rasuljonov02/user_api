@@ -5,13 +5,19 @@
 	box-sizing: border-box;
 }
 body {
-	/* background-color: rgb(213, 221, 213); */
+	/* background-color: rgb(255, 255, 255); */
 	display: grid;
 	place-items: cebter;
 }
 .contener {
 	width: 100%;
 	display: inline;
+}
+.data-row:nth-child(odd){
+	background-color: rgba(225, 235, 235, 0.644);
+}
+.data-row:nth-child(even){
+	background-color: rgba(169, 175, 175, 0.582);
 }
 .contener1 {
 	width: 100%;
@@ -20,6 +26,9 @@ body {
 	z-index: 1;
 	height: 100%;
 	backdrop-filter: blur(10px);
+}
+.contener{
+
 }
 .con1 {
 	box-sizing: border-box;
@@ -104,4 +113,7 @@ tr {
 	top: 30px;
 	cursor: pointer;
 }
+
+
+
 

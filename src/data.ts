@@ -3,19 +3,15 @@ import axios from "axios";
 const contener1: HTMLDivElement = document.querySelector(".contener1")!;
 const con1: HTMLDivElement = document.querySelector(".con1")!;
 const contener: HTMLDivElement = document.querySelector(".contener")!;
-
 const nazat: HTMLImageElement = document.querySelector(".nazat")!;
 let URL = "https://jsonplaceholder.typicode.com/users";
 
+nazat.addEventListener("click", () => {
+	contener1.style.display = "none";
+	contener.style.display = "inline";
+});
 
-nazat.addEventListener("click",()=>{
-
-			contener1.style.display = "none";
-			contener.style.display = "inline";
-
-})
-
-
+removlar();
 
 export function removlar() {
 	const rows: NodeListOf<HTMLImageElement> = document.querySelectorAll(".imgkoz")!;
@@ -23,7 +19,7 @@ export function removlar() {
 
 	rows.forEach((qtelir, ine: number) => {
 		qtelir.addEventListener("click", async (e) => {
-			console.log("salom", ine + 1);
+			console.log("img id =>", ine + 1);
 			const userURL = `${URL}/${ine + 1}`;
 			odamcha(userURL);
 
@@ -36,7 +32,6 @@ async function odamcha(userURL: string) {
 	try {
 		const response = await axios.get(userURL);
 		danilar(response.data);
-		// console.log(response.data);
 	} catch (error) {
 		console.error(error);
 	}
