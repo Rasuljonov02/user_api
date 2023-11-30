@@ -1,0 +1,107 @@
+* {
+	margin: 0;
+	padding: 0;
+	user-select: none;
+	box-sizing: border-box;
+}
+body {
+	/* background-color: rgb(213, 221, 213); */
+	display: grid;
+	place-items: cebter;
+}
+.contener {
+	width: 100%;
+	display: inline;
+}
+.contener1 {
+	width: 100%;
+	display: none;
+	position: absolute;
+	z-index: 1;
+	height: 100%;
+	backdrop-filter: blur(10px);
+}
+.con1 {
+	box-sizing: border-box;
+	padding: 40px 30px;
+	width: 100%;
+
+	display: flex;
+	margin-left: 150px;
+	align-items: center;
+	justify-content: center;
+}
+.con {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 40px 20px;
+}
+.imgkoz,
+.img1 {
+	width: 30px;
+
+	cursor: pointer;
+}
+.imgkoz:hover,
+.img1:hover {
+	width: 30px;
+	transform: scale(1.4);
+	cursor: pointer;
+}
+tr {
+	width: 100%;
+	border: 1px solid black;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 30px;
+	padding: 10px;
+}
+
+.idtd {
+	width: 30px;
+}
+.nametd {
+	width: 180px;
+}
+.emailtd {
+	width: 230px;
+}
+.teltd {
+	width: 180px;
+}
+
+.kattaimg {
+	width: 400px;
+	border-radius: 100px;
+	margin-left: 100px;
+}
+.con1img {
+	display: grid;
+	place-items: center;
+}
+.surlar {
+	width: 60px;
+}
+.sur {
+	width: 120px;
+	padding: 10px;
+}
+.con1 tr {
+	border: 2px solid black;
+	width: 500px;
+	font-size: 16px;
+	color: rgb(13, 12, 14);
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.nazat {
+	width: 50px;
+	position: absolute;
+	left: 50px;
+	top: 30px;
+	cursor: pointer;
+}
+
